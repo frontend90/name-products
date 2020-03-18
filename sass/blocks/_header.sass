@@ -1,0 +1,47 @@
+.header 
+  background: url(../img/header/bg-header.jpg) no-repeat 
+  background-size: cover 
+  background-position: right bottom 
+  width: 100%
+  padding: 50px 0
+  & .header-wrap 
+    display: flex 
+    justify-content: space-between
+    & .name-product 
+      color: #ffffff
+      width: 49%
+      & h2 
+        text-transform: uppercase 
+        font-weight: bold 
+        text-shadow: 0 1px 0 rgba(0,0,0,0.3)
+        font-size: 46px 
+        line-height: 1.1
+      & .content 
+        margin-top: 30px 
+        padding-left: 20px 
+        padding-bottom: 20px 
+        border-bottom: 2px solid rgba(255,255,255,0.3)
+        & p 
+          font-size: 20px 
+          margin-bottom: 15px 
+          position: relative
+          &::before
+            content: ''
+            +solid 
+            font-size: 20px 
+            color: #e77474
+            padding-right: 10px 
+      & .desc 
+        margin-top: 15px 
+        & p 
+          font-size: 21px 
+          line-height: 1.4
+    & .video 
+      width: 49%
+      & video 
+        width: 100%
+        background: rgba(0,0,0,0.3)
+        padding: 20px
+        border-radius: 10px 
+
+
